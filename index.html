@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="en">
+<head>
+  	<title>Phonegap Trivial</title>
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="/cordova.js"></script>
+
+	<script type="text/javascript">
+	
+		window.onerror = function myErrorHandler(errorMsg, url, lineNumber) {
+			document.getElementById('div1').innerHTML += "<p>error: " + errorMsg + "</p>";
+			return false; 
+		}
+
+	  	window.onload=function(){
+			document.getElementById('p1').innerHTML = "Javascript did this";
+
+		}	
+
+	  	
+
+	</script>
+</head>
+
+<body>
+  <div id="div1">PhonegapTrivial</div>
+  <p id="p1">x<p>
+</body>
+</html>
+
